@@ -10,9 +10,8 @@
 }
 .navigation__list {
 	margin: 0;
-	padding: 0;
+	padding: 0; 
 	display: flex;
-	
 }
 .navigation__item {
 	margin: 0;
@@ -22,17 +21,17 @@
 	a{
 		display: block;
 		font-size: 16px;
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 		font-weight: normal;
 		color: #FFF;
 		line-height: 1.625;
 		
 		&:first-child{
-			padding-left: 25px;
+			padding-left: 18px;
 		}
 		&:last-child{
-			padding-right: 25px;
+			padding-right: 18px;
 		}	
 
 		&:hover, &action, &:focus{
@@ -56,21 +55,19 @@
 .number {
 	font-size: 30px;
 	color: #FFF;
-	line-height: 0.867;
-	
-	
+	line-height: 0.867;	
 }
 .fas{
-		width: 30px;
-		height: 30px;
-		font-size: 20px;
-		//background-color: red;
-		color: green;
-
-		//justify-items: self-end;
-		
+		font-size: 15px;
+		transform: rotate(100deg);
+		vertical-align: super;
+		margin-right: 5px;
+		color: @color-blue;	
 	}
 .working-hours {
-
+	font-size: 20px;
+	color: @color-blue;
+	line-height: 1.6;
 }
+
 
