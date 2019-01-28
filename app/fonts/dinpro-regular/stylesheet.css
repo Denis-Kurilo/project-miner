@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'DINPro';
+    src: url('subset-DINPro-Regular.eot');
+    src: url('subset-DINPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('subset-DINPro-Regular.woff2') format('woff2'),
+        url('subset-DINPro-Regular.woff') format('woff'),
+        url('subset-DINPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
