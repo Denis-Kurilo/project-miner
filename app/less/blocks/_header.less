@@ -1,32 +1,11 @@
 .header{
-	
-	min-width: 100%;
-	//max-height: 900px;
-	/* background-image: url(../img/fon/horizon-line-fon.png);
-	background-repeat: repeat-y;
-	background-position: center; */
-	//background-color: red;
+	display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 	padding-top: 35px;
 	.gradient-header;
-	
-	 &:before{
-		content: "";
-		display: block;
-		min-width: 743px;
-		height: 668px;
-		background-image: url(../img/fon/header-fon-bc.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	position: absolute;
-	left: 0px;
-    top: 200px;
-	} 
-		
 }
 
-.header__button {
-
-}
 .header__fonFoto-asic{
 	position: absolute;
 	top: 50px;
@@ -46,20 +25,59 @@
 	background: red;
 	position: relative;
 }
-/* 
+ 
 .header-fon-bc{
-	min-width: 743px;
-	height: 668px;
-	background-image: url(../img/fon/header-fon-bc.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	-webkit-background-size: cover;
-	     -o-background-size: cover;
-	        background-size: cover;
+ 	min-width: 743px;
+ 	height: 668px;
+ 	background-image: url(../img/fon/header-fon-bc.jpg);
+ 	background-repeat: no-repeat;
+ 	background-position: center;
+ 	position: absolute;
+    top: 173px;
+    right: 0;
+    left: 30px;
+    opacity: 0.5;
+ 	z-index: 0;
+ }  
+ 
+.header-footer-bg{
+	margin-top: 50px;
+ 	height: 198px;
+ 	background-image: url(../img/fon/header-fon-bottom.png);
+ 	background-repeat: no-repeat;
+ 	background-position: center;
+    flex-grow: 0;
 	position: relative;
-	left: 224px;
-    bottom: 608px;
-	z-index: 0;
+ 	bottom: -21px;
+ }
+
+.down-arrow{
+	width: 21px;
+ 	height: 48px;
+ 	background-image: url(../img/icon/arrow-down.png);
+ 	background-repeat: no-repeat;
+ 	background-position: top left;
+ 	display: flex;
+    flex-direction: column;
+    align-items: center;
+ 	position: relative;
+	left: 0;
+	bottom: -130px;
 	
-}
- */
+	&:after{
+		content: "крутите вниз";
+		display: block;
+		width: 280px;
+		font-family: 'DIN Pro Medium';
+		color: rgb(235, 243, 245);
+		font-size: 14px;
+		text-align: center;
+		margin-top: -80px;
+		line-height: 1.857;
+		letter-spacing: 3px;
+		transform: rotate(90deg);
+		}
+	}
+
+
+
