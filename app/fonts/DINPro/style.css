@@ -8,7 +8,7 @@ src: local('DIN Pro Condensed Regular'), url('DINPro-Cond.woff') format('woff');
 }
 
 @font-face {
-font-family: 'DIN Pro';
+font-family: 'DIN Pro'; 
 font-style: normal;
 font-weight: normal;
 src: local('DIN Pro'), url('DINPro.woff') format('woff');
