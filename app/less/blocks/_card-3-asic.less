@@ -1,0 +1,169 @@
+.card-3-asic{
+	background-color: @color-bg;
+}
+
+.card-3{
+	background-color: #fff;
+	border-top: 8px solid #4E97D6;
+    border-radius: 10px;
+    margin-top: 200px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+ 
+    &:hover{
+    	.gradient-card-3;
+    	color: #FFF;
+    }
+}
+
+/* hover gradient */
+.card-3:hover .card-3-Asic__img>img{
+	border: 10px solid #1EBC71;
+}
+
+.card-3:hover .card-3-Asic__description__item .value{
+	color: rgba(255,255,255,0.6);
+	
+}
+.card-3:hover .card-3-Asic__characteristic{
+	border-bottom: 1px solid #fff;
+	
+}
+.card-3:hover .card-3-Asic__characteristic, .card-3:hover 
+.card-3-Asic__price-available, .card-3:hover 
+.card-3-Asic__to-order, .card-3:hover .card-3-Asic__title{
+	color: #FFF;
+}
+/* //hover gradient */
+
+.card-3-Asic__img {
+	border: 10px solid rgba(221,225,243,0.5);
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	top: -125px;
+
+	img{
+		border: 10px solid #4E97D6;
+		border-radius: 50%;
+	}
+}
+
+.wrapper-card-text{
+	margin-top: -80px;
+}
+
+.card-3-Asic__title {
+	font-size: 30px;
+	font-weight: 600;
+	color: rgb(33, 21, 65);
+	line-height: 0.867;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.card-3-Asic__description {
+	text-align: left;
+	display: flex;
+	margin-bottom: 25px;
+}
+
+.card-3-Asic__description__list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 15px;
+	font-weight: 600;
+  	line-height: 2;
+  	
+  	span.value{
+  		font-weight: 400;
+  		color: rgba(0,0,0,0.8);
+  	}
+  	
+}
+.card-3-Asic__description__item {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+/* dashed line */
+/* ul.card-3-Asic__description__list li {
+    border-bottom: 1px dotted #C2C2C2;
+    position: relative;
+    padding: 0;
+}
+
+ul.card-3-Asic__description__list li span {
+   
+    background-color: #FFF;
+    //background-color: transparent;
+     
+    margin: 0;
+    
+}
+
+ul.card-3-Asic__description__list li span.text, ul.card-3-Asic__description__list li span.value {
+    bottom: -8px;
+}
+
+ul.card-3-Asic__description__list span.text {
+    position :relative;
+    margin-right:7em; 
+    padding-right:2px;
+}
+
+ul.card-3-Asic__description__list span.value {
+    position: absolute;
+    right: 0;
+    padding-left:2px; 
+} */
+/* //dashed line */
+
+.card-3-Asic__characteristic {
+	font-size: 15px;
+	line-height: 1.733;
+	border-bottom: 1px solid #0842E7;
+
+	a{
+		text-decoration: none;
+		color: rgb(8, 66, 231);
+	}
+
+	&:hover{
+			text-decoration: none;
+			border-bottom: none;
+	}
+}
+.card-3-Asic__price-available {
+	margin-top: 20px;
+	font-size: 20px;
+	color: rgb(33, 21, 65);
+	line-height: 1.5;
+}
+.card-3-Asic__to-order {
+	font-size: 20px;
+	color: rgb(33, 21, 65);
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+.card-3-Asic__price-available span, .card-3-Asic__to-order span{
+	font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+

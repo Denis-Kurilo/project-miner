@@ -1,6 +1,6 @@
 .header{
 	display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     flex-grow: 1;
 	padding-top: 35px;
 	.gradient-header;
@@ -27,11 +27,13 @@
 }
  
 .header-fon-bc{
- 	min-width: 743px;
+ 	max-width: 743px;
  	height: 668px;
  	background-image: url(../img/fon/header-fon-bc.jpg);
  	background-repeat: no-repeat;
  	background-position: center;
+ 	margin-left: auto;
+ 	margin-right: auto;
  	position: absolute;
     top: 173px;
     right: 0;
@@ -51,6 +53,7 @@
  	bottom: -21px;
  }
 
+// arrow
 .down-arrow{
 	width: 21px;
  	height: 48px;
@@ -62,7 +65,7 @@
     align-items: center;
  	position: relative;
 	left: 0;
-	bottom: -130px;
+	bottom: -70px;
 	
 	&:after{
 		content: "крутите вниз";
@@ -72,10 +75,11 @@
 		color: rgb(235, 243, 245);
 		font-size: 14px;
 		text-align: center;
-		margin-top: -80px;
+		margin-top: -90px;
 		line-height: 1.857;
 		letter-spacing: 3px;
 		transform: rotate(90deg);
+		padding-bottom: 2px;
 		}
 	}
 

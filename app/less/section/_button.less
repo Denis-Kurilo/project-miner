@@ -24,14 +24,16 @@
 		padding: 20px 20px 18px 20px;
 		display: block;
 		text-decoration: none;
+		border-radius: 35px;
+        transition: all 0.3s ease-in;	
 		
 		&:hover, &:active, &focus{	
 			color: #F50905 !important;
-			border-radius: 26px !important;
+			border-radius: 35px 26px 26px 35px !important;
 			background-color: #ECF3F5 !important;
 			border: none;
 		    outline: none;
-		    margin-bottom: -1px;	
+		    margin-bottom: -1px;
 		}
 
 		&:hover{
@@ -52,14 +54,98 @@
 		padding-bottom: 15px;
 		color: @color-blue;
 		text-decoration: none;
+		border-radius: 35px;
+		transition: all 0.3s ease-in;	
 
 			&:hover, &:active, &focus{
-				border-radius: 35px;
+				
 				color: #F50905;
 				background-color: @color-button;
 			}
 	}
 	.fa{
+		font-size: 25px;
+		padding-right: 5px;
+	}
+}
+
+
+// Button
+
+.button{
+	
+	width:220px;
+	border-radius: 35px;
+    box-shadow: 0px 20px 60px 0px rgba(30, 192, 114, 0.4),inset -118px 0px 0px 0px rgba(235, 243, 245, 0.004); 
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+	position: relative;
+	
+	display: flex;
+        align-items: center;
+        justify-content: start;
+        
+        //padding: 0 39px;
+}
+
+ /* .wrap-button-bloc-green{
+ 	background-color: rgb(30, 192, 114);
+ 	border-radius: 35px;
+ 	font-size: 18px;
+ 	font-family: 'DIN Pro';
+ 	font-weight: bold;
+ 	float: left;
+ 	padding-bottom: 1px;
+ 	outline: none;
+ 	
+ 	a{
+ 		color: #FFF !important;
+ 		padding: 20px 20px 18px 20px;
+ 		display: block;
+ 		text-decoration: none;
+ 		border-radius: 35px;
+        transition: all 0.3s ease-in;	
+ 		
+ 		&:hover, &:active, &focus{	
+ 			color: #F50905 !important;
+ 			border-radius: 35px 26px 26px 35px !important;
+ 			background-color: #ECF3F5 !important;
+ 			border: none;
+ 		    outline: none;
+ 		    margin-bottom: -1px;
+ 		}
+ 
+ 		&:hover{
+ 			color: green;
+ 		}
+ 	}
+ }  */
+
+.wrap-button-bloc-white{
+	background-color: #EBF3F5;
+	border-radius: 35px;
+	font-size: 16px;
+	font-weight: 600;
+
+	a{
+		display: block;
+		padding-top: 20px;
+		padding-bottom: 15px;
+		color: @color-blue;
+		text-decoration: none;
+		border-radius: 35px;
+		transition: all 0.3s ease-in;	
+
+			&:hover, &:active, &focus{
+				
+				color: #F50905;
+				background-color: @color-button;
+			}
+	}
+	.i{
+		vertical-align: middle;
 		font-size: 25px;
 		padding-right: 5px;
 	}
