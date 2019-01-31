@@ -3,9 +3,10 @@
 	padding-bottom: 40px;
 }
 
+/* hover gradient */
  .card-3{
 	background-color: #fff;
-	border-top: 8px solid #4E97D6;
+	border-top: 8px solid @color-blue;
     border-radius: 10px;
     margin-top: 200px;
 	display: flex;
@@ -44,13 +45,14 @@
   z-index: -1;
   transition: opacity 0.5s linear;
   opacity: 0;
+  border-radius: 10px;
 }
 
 .card-3:hover::before {
   opacity: 1;
+  border-radius: 0 0px 10px 10px;
 }
 
-/* hover gradient */
  .card-3:hover .card-3-Asic__img>img{
 	border: 10px solid #1EBC71;
 }
@@ -193,3 +195,111 @@ ul.card-3-Asic__description__list span.value {
 .card-3-Asic__price-available span, .card-3-Asic__to-order span{
 	font-weight: 600; 
 }
+
+
+/* Block description */
+.wrapper-characteristic{
+	width: 100%;
+	background-color: #ccc;
+	padding-bottom: 40px;
+	padding-left: 25px;
+	padding-right: 20px;
+	border-top: 8px solid @color-blue;
+	border-radius: 10px;
+    word-break: break-all;
+}
+
+.characteristic__title {
+	font-size: 30px;
+	font-weight: 600;
+	color: rgb(33, 21, 65);
+	line-height: 1.067;
+	text-align: center;
+	padding-bottom: 35px;
+}
+.characteristic__info, .characteristic__technical-characteristic {
+	font-size: 18px;
+	font-weight: bold;
+	color: rgb(78, 151, 214);
+  	line-height: 1.667;
+  	padding-bottom: 10px;
+}
+.characteristic__info-desk, .characteristic__technical-characteristic-desk {
+	font-size: 15px;
+	padding-bottom: 30px;
+	
+	ul{
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		li{
+			margin: 0;
+			padding: 0;
+			font-weight: bold;
+			
+			span{
+				font-weight: normal;
+				padding-left: 5px;
+			}
+		}
+	}
+
+	p{
+		font-size: 15px;
+	}
+}
+
+
+.modal-form {
+
+}
+.modal-form__input--maskedinput {
+
+}
+
+
+
+
+
+
+
+
+.button {
+}
+.button-width {
+}
+.Button__label-green {
+}
+.Button__label-green--width {
+}
+.modal-form__submit {
+}
+.Button__label-white {
+}
+.Button__label-white--hidden {
+}
+.fas {
+}
+.fa-plus {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Block //description */

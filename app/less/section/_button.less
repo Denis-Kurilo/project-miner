@@ -105,12 +105,13 @@
 		font-family: 'DIN Pro';
 		font-weight: bold;
 		text-align: center;
-		text-decoration: none;
+		text-decoration: none;	
 	}
 }
-.Button__label-green:hover, .Button__label-green:focus{
+.Button__label-green:hover{
 	width:260px;
 }
+
 .Button__label-white {
 	display: inline-block;
 	position: relative;
@@ -127,22 +128,44 @@
 	}
 }
 
-.button-width {
-	width:335px;
+/* Jquery Modal*/
+
+.submit{
+	position: relative;
 }
+
+ .button-width {
+	width:335px;
+    padding: 31px 0 33px 0px;
+} 
 
 .Button__label-green--width{
 	width: 270px;
+	padding: 20px 0px 19px 0px;
+	outline: none;
+	color: #FFF;
+	font-size: 18px;
+	font-weight: bold;
+  	line-height: 1.444;
 	
 	&:hover{
 		width: 335px;
 	}
 }
 
-.Button__label-white--hidden{
-right: 260px;
-	.fas{		
-		right: -520px;
-	}
-	
+input[type="submit"] {
+    cursor: pointer;
+    margin-top: 0px;
+    border: none;
 }
+
+.Button__label-white--hidden{
+	
+	.fas{	
+		position: absolute;
+		top: -80px;
+    	right: -141px;
+	}	
+} 
+/* //Jquery Modal*/
+
