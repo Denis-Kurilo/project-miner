@@ -1,0 +1,60 @@
+#ex1.modal{
+	border-radius: 8px;
+	background-color: rgb(33, 21, 65);
+	box-shadow: 0px 20px 139px 0px rgba(49, 110, 179, 0.66);
+}
+
+.modal-title{
+	font-size: 50px;
+	color: #FFF;
+	line-height: 1;
+	text-align: center;
+	
+	span{
+		color: @title-span;
+	}
+}
+
+#ex1.modal.modal a.close-modal{
+	top: -3.5px;
+    right: 5.5px;
+    background-image: none;
+}
+
+.cross{
+	text-align: right;
+}
+
+.modal-cross{
+	font-size: 20px;
+	color: #1EC072;
+	text-align: right;
+	transform: rotate(90deg);
+	
+	&:hover{
+		color: #20CA64;
+	}
+}
+
+.modal-form{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.modal-form__input--maskedinput{
+	border-radius: 8px;
+	background-color: rgb(255, 255, 255);
+	margin-bottom: 40px;
+	padding: 15px 20px;
+	font-size: 25px;
+	color: rgb(33, 21, 65);
+	font-weight: bold;
+    line-height: 1.5;
+    outline: none;
+    width: 85%;
+    letter-spacing: 8px;
+}
+

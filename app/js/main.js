@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+    // maskedinput 
+    $(".modal-form__input--maskedinput").mask("+7(999)99-99-999");
+
+    
+
 	/*  owl-carousel  */
 	
 /*	$('.owl-carousel').owlCarousel({
