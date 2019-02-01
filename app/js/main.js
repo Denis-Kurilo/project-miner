@@ -2,7 +2,6 @@ $(document).ready(function() {
 
     // maskedinput 
     $(".modal-form__input--maskedinput").mask("+7(999) 99-99-999");
-
     
 
 	/*  owl-carousel  */
@@ -34,3 +33,13 @@ $(document).ready(function() {
 
 	
 });
+
+function openbox(open){
+        display = document.getElementById('open').style.display;
+        if(display == "none"){
+            display = document.getElementById('open').style.display = "block";
+        }else{
+            display = document.getElementById('open').style.display = "none";
+        }
+    }
+

@@ -27,6 +27,7 @@
     	border-top: 8px solid #1EBC71;
     	padding-top: 20px;
     	padding-bottom: 20px;
+    	//border-radius: 0x;
     }
 } 
 
@@ -45,7 +46,7 @@
   z-index: -1;
   transition: opacity 0.5s linear;
   opacity: 0;
-  border-radius: 10px;
+  border-radius: 0 0px 10px 10px;
 }
 
 .card-3:hover::before {
@@ -199,23 +200,48 @@ ul.card-3-Asic__description__list span.value {
 
 /* Block description */
 .wrapper-characteristic{
-	width: 100%;
+	display: none;
+	background-image: linear-gradient(
+    to bottom,
+	hsl(211, 36%, 21%),
+    hsl(251, 46%, 18%)
+  );	
+  	position: absolute;
+    top: 250px;
+    left: 0;
+    z-index: 50;
+	//width: 100%;
+	//height: 100%;
 	background-color: #ccc;
-	padding-bottom: 40px;
-	padding-left: 25px;
-	padding-right: 20px;
 	border-top: 8px solid @color-blue;
-	border-radius: 10px;
+	border-radius: 10px 10px 10px 10px;
+	
+}
+.wrap-text{
+	position: relative;
+	//width: 100%;
+	//height: 500px;
+	padding-left: 25px;
+    padding-right: 25px;
     word-break: break-all;
+    border-radius: 0px 0 10px 10px;
+    background-image: linear-gradient(
+    to bottom,
+	hsl(180, 33%, 99%),
+    hsl(60, 50%, 99%),
+    hsl(0, 0%, 99%)
+  );
 }
 
 .characteristic__title {
 	font-size: 30px;
-	font-weight: 600;
+	font-weight: 900;
 	color: rgb(33, 21, 65);
 	line-height: 1.067;
 	text-align: center;
 	padding-bottom: 35px;
+	word-break: normal;
+	padding-top: 35px;
 }
 .characteristic__info, .characteristic__technical-characteristic {
 	font-size: 18px;
@@ -248,28 +274,51 @@ ul.card-3-Asic__description__list span.value {
 		font-size: 15px;
 	}
 }
-
-
-.modal-form {
-
+.form-phone{	
+	border-radius: 0px 0 10px 10px;
+	background-image: linear-gradient(
+    to bottom,
+	hsl(211, 36%, 21%),
+    hsl(251, 46%, 18%)
+  );	
 }
-.modal-form__input--maskedinput {
+.form-phone__title{
+	font-size: 18px;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	line-height: 1.667;
+	padding-top: 30px;
+	padding-left: 25px;
+	padding-bottom: 10px;
+}
 
+.form-phone>.modal-form {
+	margin-top: 0px;
+	margin-bottom: 0;		
+}
+
+.form-phone>.modal-form>.modal-form__input--maskedinput {
+	letter-spacing: 3px;
+	margin-bottom: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.form-phone>.modal-form>.Button__label-green-small{
+	width: 100px;
 }
 
 
 
-
-
-
-
-
-.button {
+/* .form-phone>.button {
+	width:260px;
 }
-.button-width {
-}
-.Button__label-green {
-}
+.form-phone.button-width {
+	width:100px;
+} */
+/* .form-phone>.modal-form>.Button__label-green {
+	width:260px;
+} */
 .Button__label-green--width {
 }
 .modal-form__submit {
@@ -283,6 +332,18 @@ ul.card-3-Asic__description__list span.value {
 .fa-plus {
 }
 
+.Введите_номер_телефона_ {
+  font-size: 18px;
+  font-family: "DINPro";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.667;
+  text-align: justifyLeft;
+  position: absolute;
+  left: 407.844px;
+  top: 2316.869px;
+  z-index: 352;
+}
 
 
 
