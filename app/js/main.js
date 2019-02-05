@@ -15,25 +15,34 @@ $(document).ready(function() {
 
 	/*  owl-carousel  */
 	
-/*	$('.owl-carousel').owlCarousel({
+	$('.owl-carousel').owlCarousel({
     loop:true,
-    margin:10,
+    margin:20,
     nav:true,
+    //navText : ["<img src=\"img/icon/arrow_left.png\">","<img src=\"img/icon/arrow_right.png\">"],
     autoplay: true,
-    autoplayTimeout: 6000,
+    autoplayTimeout: 1000,
     smartSpeed: 1000,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
+    responsive: {
+            0: {
+                items: 1,
+                nav: false,
+                autoplay: 4000
+            },
+            640: {
+                items: 1,
+                nav: true,
+                autoplay: 10000
+            },
+            1200: {
+                items: 1,
+                nav: true,
+                autoplay: 10000
+            },
         }
-    }
-})*/
+})
+
+
 	
 	/*  //owl-carousel  */
 

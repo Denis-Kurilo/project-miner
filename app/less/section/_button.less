@@ -77,56 +77,65 @@
 	color: #2C659B;
 }
 
-// Button
-.button {
-	width:260px;
-	border-radius: 35px;
-	box-shadow: 0px 20px 60px 0px rgba(30, 192, 114, 0.4),inset -118px 0px 0px 0px rgba(235, 243, 245, 0.004);
-    margin: 40px auto;
-	padding: 20px 35px 30px 50px;
-	font-weight: bold;
-	position: relative;
-	background-color: #FFF;
-}
-.Button__label-green {
-	width:170px;
-	display: inline-block;
-	background-color: @color-button;
-	border-radius: 35px;
-	transition: all 0.4s ease-in;
-	position: absolute;
-	top: 0;
-	left: 0;
-	a{
-		display: block;
-		padding: 20px 0px 19px 0px;
-		color: #fff;
-		font-size: 18px;
-		font-family: 'DIN Pro';
-		font-weight: bold;
-		text-align: center;
-		text-decoration: none;	
-	}
-}
-.Button__label-green:hover{
-	width:260px;
+/*  Button */
+.btn-substrate {
+  width: 100%;
+  display: inline-block;
+  background-color: #FFF;
+  position: relative;
+  border-radius: 35px;
+  box-shadow: 0px 20px 60px 0px rgba(30, 192, 114, 0.4),inset -118px 0px 0px 0px rgba(235, 243, 245, 0.004);
+  
+  &--width-modal{
+  	width: 77%;
+  }
+
+    &::before{
+      content: "+";
+      display: block;
+      font-size: 30px;
+      font-family: 'DIN Pro';
+      position: absolute;
+      color: @color-button;;
+      top: 50%;
+      right: 15px;
+      transform: translate(-50%, -50%);
+    } 
 }
 
-.Button__label-white {
-	display: inline-block;
-	position: relative;
-	
-	.fa, .fas{
-		vertical-align: middle;
-		font-size: 20px;
-		font-weight: 600;
-		color: #44C06F;
-    	transform: rotate(90deg);
-    	position: absolute;
-	    top: -9px;
-	    right: -180px;
-	}
+ .btn {
+  background: @color-button;;
+  border-radius: 35px;
+  text-align: center;
+  position: relative;
+  width: 80%;
+  top: 0;
+  right: 0;
+  opacity: .8;
+  transition: all 0.3s ease-in;
+} 
+
+.btn__name {
+  font-size: 25px;
+  font-family: 'DIN Pro';
+  
+  &--font-18{
+  	font-size: 20px;
+  }
+  
+  a{
+    display: block;
+    padding: 10px 50px;
+    color: #FFF;
+    text-decoration: none;
+  }
 }
+
+.btn:hover{
+  width: 100%;
+  opacity: 1; 
+}
+/* // Button */
 
 /* Jquery Modal*/
 
@@ -172,59 +181,5 @@ input[type="submit"] {
 
 
 
-.btn-substrate {
-	width: 100%;
-  //width: 420px;
-  display: inline-block;
-  background-color: #FFF;
-  position: relative;
-  border-radius: 35px;
-  box-shadow: 0px 20px 60px 0px rgba(30, 192, 114, 0.4),inset -118px 0px 0px 0px rgba(235, 243, 245, 0.004);
 
-    &::before{
-      content: "+";
-      display: block;
-      font-size: 30px;
-      font-family: 'DIN Pro';
-      position: absolute;
-      color: @color-button;;
-      top: 50%;
-      right: 15px;
-      transform: translate(-50%, -50%);
-    } 
-}
-
- .btn {
-  background: @color-button;;
-  border-radius: 35px;
-  text-align: center;
-  position: relative;
-  width: 80%;
-  //width: 340px;
-  top: 0;
-  right: 0;
-  opacity: .8;
-  transition: all 0.3s ease-in;
-} 
-
-.btn__name {
-  font-size: 25px;
-  font-family: 'DIN Pro';
-  
-  &--font-18{
-  	font-size: 20px;
-  }
-  
-  a{
-    display: block;
-    padding: 20px 50px;
-    color: #FFF;
-    text-decoration: none;
-  }
-}
-
-.btn:hover{
-  width: 100%;
-  opacity: 1; 
-}
 
