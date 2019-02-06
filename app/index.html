@@ -56,14 +56,14 @@
 				<div class="logo__title">TeamCoin</div>
 			</div>
 
-			<div class="navigation">
+			<nav class="navigation">
 				<ul class="navigation__list">
-					<li class="navigation__item navigation__item--hover-radius-left"><a href="#">Каталог</a></li>
-					<li class="navigation__item"><a href="#">Дата центр</a></li>
-					<li class="navigation__item"><a href="#">Сервисный ремонт</a></li>
-					<li class="navigation__item navigation__item--hover-radius-right"><a href="#">Обмен валют</a></li>
+					<li class="navigation__item navigation__item--hover-radius-left"><a href="#catalog">Каталог</a></li>
+					<li class="navigation__item"><a href="#data-center">Дата центр</a></li>
+					<li class="navigation__item"><a href="#service">Сервисный ремонт</a></li>
+					<li class="navigation__item navigation__item--hover-radius-right"><a href="#exchange">Обмен валют</a></li>
 				</ul>
-			</div>
+			</nav>
 
 			<div class="phone">
 				<div class="number"><i class="fas fa-phone"></i> 8 495 000 00 00</div>
@@ -104,7 +104,22 @@
 				</div>
 			</div>
 	<!-- down-arrow -->
-	<div class="down-arrow"></div>
+	<!-- <div class="down-arrow"></div> -->
+
+	
+		<a href="#catalog" class="mouse_scroll __mPS2id" rel="m_PageScroll2id">
+			
+			<div class="mouse">
+				<div class="wheel"></div>
+			</div>
+			<div>
+				<span class="m_scroll_arrows unu"></span>
+				<span class="m_scroll_arrows doi"></span>
+			</div>
+			<div class="twist-down">крутите вниз</div>
+		</a>
+
+	
 	<!-- //down-arrow -->		
 	</div>
 	
@@ -118,7 +133,7 @@
 		<h2 class="title-Asic">Asic <span>Майнеры</span></h2>
 		<div class="row">
 			<!-- card --> 
-			<div class="col-md-12 col-lg-4">
+			<div id="catalog" class="col-md-12 col-lg-4">
 				<div class="card-3">
 					<div class="card-3-Asic__img"><img src="img/foto/foto-asic-1.jpg" alt="фото Asic"></div>
 					<div class="wrapper-card-text">
@@ -357,7 +372,7 @@
 			<!-- card -->
 			<div class="card p-card-ferm">
 				<div class="card__title">Асус 570 с памятью Самсунг на 6 карт</div>
-				<div class="card__img"><img src="img/foto/foto-farm-1.jpg" alt="Ферма Асус 570"></div>
+				<div class="card__img"><img src="img/foto/foto-farm-3.png" alt="Ферма Асус 570"></div>
 				<ul class="card__list">
 					<li class="card__item"> <span class="text">Характеристики:</span><span class="value">180­185 мегахэшней на эфире</span></li>
 					<li class="card__item"> <span class="text">Потребление:</span><span class="value">800­1000 Вт.</span></li>
@@ -388,7 +403,7 @@
 			<!-- card -->
 			<div class="card p-card-ferm">
 				<div class="card__title">Асус 570 с памятью Самсунг на 6 карт</div>
-				<div class="card__img"><img src="img/foto/foto-farm-1.jpg" alt="Ферма Асус 570"></div>
+				<div class="card__img"><img src="img/foto/foto-farm-4.jpg" alt="Ферма Асус 570"></div>
 				<ul class="card__list">
 					<li class="card__item"> <span class="text">Характеристики:</span><span class="value">180­185 мегахэшней на эфире</span></li>
 					<li class="card__item"> <span class="text">Потребление:</span><span class="value">800­1000 Вт.</span></li>
@@ -476,6 +491,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
 <script src="libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
 
 <!-- User scripts  -->
 <script src="js/main.js"></script>
