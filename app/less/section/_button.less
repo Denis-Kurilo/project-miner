@@ -78,7 +78,7 @@
 }
 
 /*  Button */
-.btn-substrate {
+.btn__substrate {
   width: 100%;
   display: inline-block;
   background-color: #FFF;
@@ -109,10 +109,21 @@
       top: 50%;
       right: 15px;
       transform: translate(-50%, -50%);
+      
+  
     } 
+
+    &--icon-none::before{
+      	display: none;
+      }
+
+	&--width-90{
+		width: 90%;
+		margin-right: none;
+	}
 }
 
- .btn {
+ .btn__color {
   background: @color-button;;
   border-radius: 35px;
   text-align: center;
@@ -122,6 +133,10 @@
   right: 0;
   opacity: .8;
   transition: all 0.3s ease-in;
+  
+  &--width-inherit{
+    width: initial
+  }
 } 
 
 .btn__name {
@@ -129,18 +144,18 @@
   font-family: 'DIN Pro';
   
   &--font-18{
-  	font-size: 20px;
+  	font-size: 18px;
   }
   
   a{
     display: block;
-    padding: 10px 50px;
+    padding: 15px 50px;
     color: #FFF;
     text-decoration: none;
   }
 }
 
-.btn:hover{
+.btn__color:hover{
   width: 100%;
   opacity: 1; 
 }
