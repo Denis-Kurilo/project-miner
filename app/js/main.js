@@ -39,6 +39,65 @@ $('.owl-carousel').owlCarousel({
 });
 /*  //owl-carousel  */
 
+/*  maps  */
+ymaps.ready(init);
+    var myMap,
+        myPlacemark1;
+        
+    function init(){     
+        myMap = new ymaps.Map("map", {
+            center: [44.49809819, 34.16425932],
+            zoom: 16,
+            controls: ['smallMapDefaultSet']
+        });
+
+        myMap.controls.add('routeEditor');
+
+        myMap.controls
+            .remove('geolocationControl')
+            .remove('searchControl')
+            .remove('trafficControl')
+            .remove('typeSelector')
+            .remove('rulerControl');
+
+         myMap.behaviors.disable([
+            'drag',
+            'scrollZoom'    
+         ]);
+
+         //pin
+         var myPin = new ymaps.GeoObjectCollection({}, {
+            iconLayout: 'default#image',
+            iconImageHref: '../img/icon/icon-maps.png',
+            iconImageSize: [60, 64],
+            iconImageOffset: [-3, -42]
+        });
+
+        myPlacemark1 = new ymaps.Placemark([44.49809819, 34.16425932], { 
+            // balloonContentHeader: '<span class="map-red">Сдача номеров от хозяина</span>',
+            // balloonContentBody: 'Зелёный номер',
+            // balloonContentFooter: 'Республика Крым г.Ялта ул.Дражинского 27',
+            // hintContent: 'Сдача номеров от хозяина Зелёный номер'
+        });
+
+        myPin.add(myPlacemark1);
+        myMap.geoObjects.add(myPin);
+    }
+/*  maps  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });  
 
 	
