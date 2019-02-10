@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+//jequry-ui
+$('.currency-list').selectmenu();
+
 //slide2id - плавная прокрутка по ссылкам внутри страницы
 $("nav a,a[href='#top'],a[rel='m_PageScroll2id'],a.PageScroll2id").mPageScroll2id({
     highlightSelector:"nav a"
@@ -86,7 +89,39 @@ ymaps.ready(init);
 /*  maps  */
 
 
+//Animate arrow-top
 
+$(function (){
+
+    $("#arrow-top").hide();
+
+    $(window).scroll(function(){
+
+        if ($(this).scrollTop() > 1000) {
+
+            $("#arrow-top").fadeIn();
+
+        }else{
+
+            $("#arrow-top").fadeOut();
+
+        }
+
+    });
+
+    $("#arrow-top a").click(function(){
+
+        $("body, html").animate({
+
+            scrollTop:0
+
+        }, 1500);
+
+        return false;
+
+    }); 
+
+});
 
 
 

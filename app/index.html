@@ -11,6 +11,7 @@
     <meta name="description" content="Описание страницы...">  
 
 	<!-- Syles -->
+	<link rel="stylesheet" href="libs/jquery-ui/jquery-ui.min.css">
 	<link rel="stylesheet" href="libs/bootstrap-4.0.0-dist/css/bootstrap-reboot.min.css">
 	<link rel="stylesheet" href="libs/bootstrap-4.0.0-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -649,6 +650,63 @@
 
 
 
+<!-- currency exchange -->
+<div class="exchange">
+	<div class="bg-left"></div>
+	<div class="container">
+		<div class="wrapper-exchange section">
+			<h2 class="exchange__title m-b-70"><span>Покупки</span> и <span>продажи</span><br> криптовалюты </h2>
+
+			<div class="row">
+				
+					<div class="col-md-4">
+						<label class="label" for="btc">Хочу купить</label>
+						<div class="currency">
+							<input class="input" type="text" id="btc">
+							<select class="currency-list" name="btc" id="">
+								<option class="currency-item">Bitcoin BTC</option>
+								<option class="currency-item">Ethereum ETC</option>
+								<option class="currency-item">Ripple XRP</option>
+								<option class="currency-item">Bitcoin Cash BCH</option>
+							</select>
+							<!-- <span class="currency-text">за</span> -->		
+						</div>
+					</div>
+					<div class="col-md-2"></div>
+					<!-- <div class="col-md-4">
+						<label class="label" for="currency">Хочу купить</label>
+						<div class="currency">
+							<input type="text" id="currency">
+							<select name="btc" id="">
+								<option>Bitcoin BTC</option>
+								<option>Ethereum ETC</option>
+								<option>Ripple XRP</option>
+								<option>Bitcoin Cash BCH</option>
+							</select>	
+						</div>
+					</div> -->
+					<div class="col-md-3">
+						<!-- button -->
+						<!-- <div class="btn__substrate m-t-40 m-b-40">
+						  <div class="btn__color">
+						    <div class="btn__name btn__name--font-18">
+						      <a href="#ex1" rel="modal:open">Заказать Асик</a>
+						    </div>
+						  </div>  
+						</div> -->
+						<!-- //button -->
+					</div>	
+				
+				
+			</div>	
+		</div>
+	</div>
+</div>
+<!-- //currency exchange -->
+
+
+
+ 
 
 
 
@@ -745,13 +803,13 @@
 				</div>
 				<div class="arrow-top">
 					<!-- mouse scroll -->
-					<div class="mouse-scroll">
+					<div id="arrow-top" class="mouse-scroll button-top">
 						<a href="#top" class="mouse_scroll __mPS2id" rel="m_PageScroll2id">
 							<div class="circle-arrow">
 								<span class="m_scroll_arrows unu m_scroll_arrows--transform m_scroll_arrows--white"></span>
 								<span class="m_scroll_arrows doi m_scroll_arrows--transform m_scroll_arrows--white"></span>
 							</div>
-							<span class="twist-down twist-down--footer-arrow">вернуться наверх</span>
+							<span class="twist-down  twist-down--footer-arrow">вернуться наверх</span>
 						</a>	
 					</div>
 					<!-- //mouse scroll -->	
@@ -811,6 +869,7 @@
 
 <!-- Vender scripts  -->
 <script src="libs/jquery/jquery-3.2.1.min.js"></script>
+<script src="libs/jquery-ui/jquery-ui.min.js"></script>
 <script src="libs/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
