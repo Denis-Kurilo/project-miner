@@ -2,26 +2,35 @@
 	display: flex;
     align-items: center;
     margin-bottom: 20px;
+    margin-left: -40px;
     
-    /* @media only screen and (min-width : 768px) {
-       margin-bottom: 0;
-    	} */
+     @media only screen and (min-width : 768px) {
+       margin-left: 0;
+	} 
 
-	@media only screen and (min-width : 2000px) {
-       margin-bottom: 0;
-	}
+	/* @media only screen and (min-width : 2000px) {
+	       margin-bottom: 0;
+	} */
 	
 	.logo__img{
-		margin-right: 15px;
+		margin-right: 5px;
+		
+		@media only screen and (min-width : 768px) {
+			margin-right: 15px;
+  		}
 	}
 
 	.logo__title{
 		font-family: 'DINPro';
-		font-size: 30px;
+		font-size: 25px;
 		font-weight: 600;
-		font-style: normal;
+		font-style: normal; 
 		color: #FFF;
 		line-height: 0.867;
 		letter-spacing: 4px;
+		
+		@media only screen and (min-width : 768px) {
+			font-size: 30px;
+  		}
 	}
 }

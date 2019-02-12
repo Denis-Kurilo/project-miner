@@ -54,20 +54,21 @@
 <header id="top" class="header"> 
 	<div class="container">
 		<div class="nav">
-			<!-- <div id="navigation-toggle" class="navigation__taggle-top">Меню</div> -->
 			<div class="logo">
 				<div class="logo__img"><img src="img/icon/logo.png" alt="Логотип"></div>
 				<div class="logo__title">TeamCoin</div>
 			</div>
 
-			<!-- <nav class="navigation">
-				<ul id="mobile-nav" class="navigation__list">
+			<nav class="navigation">
+				<div class="navigation__toggle fas navigation__toggle--fixed navigation__taggle-top"><i class="fas fa-bars"></i></div>
+				<!-- <div id="navigation-toggle" class="navigation__toggle navigation__taggle-top"><i class="fas fa-bars"></i></div> -->
+				<ul class="navigation__list navigation__list--open">
 					<li class="navigation__item navigation__item--hover-radius-left"><a href="#catalog">Каталог</a></li>
 					<li class="navigation__item"><a href="#data-center">Дата центр</a></li>
 					<li class="navigation__item"><a href="#service">Сервисный ремонт</a></li>
 					<li class="navigation__item navigation__item--hover-radius-right"><a href="#exchange">Обмен валют</a></li>
 				</ul>
-			</nav> -->
+			</nav>
 
 			<div class="phone">
 				<div class="number"><i class="fas fa-phone"></i> 8 495 000 00 00</div>
@@ -77,7 +78,7 @@
 		<div class="header-fon-bc"></div>
 			<div class="wrap-center-block-header">
 				<div class="row">
-					<div class="col- col-md-7 ">
+					<div class="col-md-12 col-lg-7">
 						<h1 class="title">
 						Продажа оборудования
 						<span>для добычи</span> криптовалюты
@@ -86,15 +87,18 @@
 						</h1>
 					
 						<!-- button -->
-						<div class="switcher">
-							<div class="switcher__label-green">
-								<a href="#ex1" rel="modal:open">Заказать оптовый прайс</a>
-							</div>
-								
-							<div class="switcher__label-white">
-								<a href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>PDF</a>
-							</div>
-						</div>
+						<!-- <div class="switcher-wrap">
+							<div class="switcher">
+								<div class="switcher__label-green">
+									<a href="#ex1" rel="modal:open">Заказать оптовый прайс</a>
+								</div>
+									
+								<div class="switcher__label-white">
+									<a href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>PDF</a>
+								</div>
+							</div>	
+						</div> -->
+						
 						<!-- //button -->
 					</div>
 
@@ -893,7 +897,7 @@
 
 
 
-
+ 
 
 <!-- jQuery Modal  -->
 <!-- <div id="ex1" class="modal">
@@ -927,4 +931,4 @@
 <!-- User scripts  -->
 <script src="js/main.js"></script>
 </body>
-</html>
+</html> 

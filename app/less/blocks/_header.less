@@ -4,14 +4,15 @@
     flex-grow: 1;
 	padding-top: 10px;
 	.gradient-header;
+	position: relative;
 	
-	@media only screen and (min-width : 480px) {
+	/* @media only screen and (min-width : 480px) {
 		padding-top: 35px;
-	}
+	} */
 }
 
 .header__fonFoto-asic{
-	position: absolute;
+	position: absolute; 
 	top: 50px;
 	right: -131px;
 	width: 150%;
@@ -31,6 +32,7 @@
 }
  
 .header-fon-bc{
+	display: none;
  	height: 500px;
  	background-image: url(../img/fon/header-fon-bc.jpg);
  	background-repeat: no-repeat;
@@ -43,15 +45,14 @@
     left: 0px;
     opacity: 0.5;
  	z-index: 0;
- 	@media only screen and (min-width : 768px) {
-		max-width: 743px;
-		height: 500px;
-		top: 173px;
-		left: 30px;
-	}
+ 	
+ 	 @media only screen and (min-width : 992px) {
+ 			display: block;
+ 		} 
  }  
  
  .header__fonFoto-asic{
+ 	display: none;
  	width: 621px;
  	height: 615px;
  	background-image: url(../img/fon/header-fon-asic.png);
@@ -63,16 +64,20 @@
  	right: -80px;
  	z-index: 0;
  	
- 	 @media only screen and (max-width : 1310px) {
-		width: 550px;
- 		height: 545px;
- 		top: 15px;
- 		right: -17px;
- 	} 
+ 	@media only screen and (min-width : 992px) {
+		display: block;
+	}
+ 	
+ 	 /* @media only screen and (max-width : 1310px) {
+ 	  		width: 550px;
+ 	   		height: 545px;
+ 	   		top: 15px;
+ 	   		right: -17px;
+ 	   	} */ 
 }
  
 .header-footer-bg{
-	margin-top: 50px;
+	margin-top: 0px;
  	height: 198px;
  	background-image: url(../img/fon/header-fon-bottom.png);
  	background-repeat: no-repeat;
@@ -80,6 +85,10 @@
     flex-grow: 0;
 	position: relative;
  	bottom: -21px;
+ 	
+ 	@media only screen and (min-width : 992px) {
+		margin-top: 50px;
+	}
  }
 
 // arrow

@@ -123,62 +123,35 @@ $(function (){
 
 
 /* navigation  */
-// Скрипт для показа и скрытия выпадающего меню на смартфонах
-// Создаем переменые для кнопки и для меню
-var pull = $('#navigation-toggle');
-var menu = $('#mobile-nav');
 
-// Описываем событие при нажатии на кнопку
-$(pull).on("click", function(e){
+var navToggleButton = $('.navigation__toggle');
+var navToggleIcon = $('.navigation__toggle .fas');
+var navBlock = $('.navigation__list');
+var navLink = $('.navigation__list a');
+var navBlockOpen = 'navigation__list--open';
+var iconNav = 'fa-bars';
+var iconClose = 'fa-times';
 
-    // Отменяем стандартное поведение ссылки в браузере
+navToggleButton.on('click', function(e){
     e.preventDefault();
+    navBlock.toggleClass(navBlockOpen);
 
-    // Открываем/Скрываем меню
-    menu.slideToggle();
+    //замена иконки
+    if( navToggleIcon.hasClass(iconNav) ){
+        navToggleIcon.removeClass(iconNav);
+        navToggleIcon.addClass(iconClose);
 
-    // Добавляем модификатор --active
-    $(this).toggleClass('navigation__toggle-top--active');  
-});
+    }else{
+        navToggleIcon.addClass(iconClose);
+        navToggleIcon.addClass(iconNav);
+    }
+})
 
-//меняется цвет header mobile click
-$(pull).on("click", function(){
-    $('header').css('background-color','rgba(0,44,95, 0.9)');
-    $(this).css('background-color','rgba(0,44,95, 1)');
-});
+navLink.on('click', function(){
+    navBlock.removeClass(navBlockOpen);
+})
 
-// При изменении размера окна, в большую сторону, если меню было с крыто, показываем его.
-$(window).resize(function(){
-    var w = $(window).width();
-    if(w > 992) {
-        menu.removeAttr('style');
-        pull.removeClass('navigation__toggle-top--active');
-    } 
-});
 
-    // Скрываем меню при клике на него на смартфоне и планцете
-// По клику на ссылку в меню запускаем ф-ю fnstart();
- $('nav.navigation a').on("click", function() {
-    $('header').removeClass ('background-color','rgba(0,44,95, 0.9)');
-    fnstart();
-    });
-
-    $('.navigation_list').click(function(){
-        var w = $(window).width();
-        if(w<992){
-            $('#mobile-nav').fadeOut();
-        } 
-    });
- 
-// В ф-ии fnstart(); проверяем - если меню открыто (проверяем по наличию класса --active у кнопки pull)
-// тогда убираем класс модификатор --active у кнопки pull
-// и сворачиваем/скрываем меню 
-function fnstart(){ 
-    if ( $("#navigation-toggle").hasClass("navigation__toggle-top--active")  ) {
-        pull.toggleClass('navigation__toggle-top--active');
-        menu.slideToggle();
-    } 
-};
 /* //navigation  */
 
 });
