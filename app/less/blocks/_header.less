@@ -5,19 +5,19 @@
 	padding-top: 10px;
 	.gradient-header;
 	position: relative;
-	
+	 
 	/* @media only screen and (min-width : 480px) {
 		padding-top: 35px;
 	} */
 }
 
-.header__fonFoto-asic{
+/* .header__fonFoto-asic{
 	position: absolute; 
 	top: 50px;
 	right: -131px;
 	width: 150%;
 	z-index: 1;
-}
+} */
 
 .wrap-center-block-header{
 	display: flex;
@@ -53,19 +53,28 @@
  
  .header__fonFoto-asic{
  	display: none;
- 	width: 621px;
- 	height: 615px;
  	background-image: url(../img/fon/header-fon-asic.png);
  	background-repeat: no-repeat;
  	background-position: center;
     background-size: cover;
- 	position: absolute;
- 	top: 50px;
- 	right: -80px;
  	z-index: 0;
  	
  	@media only screen and (min-width : 992px) {
 		display: block;
+		width: 500px;
+ 		height: 495px;
+ 		position: absolute;
+ 		top: -40px;
+	 	right: -10px;
+ 	top: 50px;
+ 	right: -80px;
+	}
+
+	@media only screen and (min-width : 1200px) {
+		width: 621px;
+ 		height: 615px;
+ 		top: 50px;
+ 		right: -80px;
 	}
  	
  	 /* @media only screen and (max-width : 1310px) {

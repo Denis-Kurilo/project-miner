@@ -4,14 +4,13 @@
     position: relative;
     z-index: 1;
     
-     /* @media only screen and (min-width : 768px) {
-         flex-direction: row;
-      		justify-content: space-between;
-          	align-items: center;
-      	} */ 
+    @media only screen and (min-width : 768px) {
+		flex-direction: row;
+        justify-content: space-between;
+	}
 }
 
-.navigation {
+.navigation { 
 	display: flex;
 	//width: 100%;
 	
@@ -19,7 +18,7 @@
 	.navigation__toggle{
 		display: block;
 		
-		@media only screen and (min-width : 768px) {
+		@media only screen and (min-width : 992px) {
 		display: none;
   		}
 	}	
@@ -34,7 +33,7 @@
 	
 
 
-	&--open{
+	 &--open{
 		display: flex;
 	    justify-content: center;
 	    flex-direction: column;
@@ -47,18 +46,18 @@
 		z-index: 100;
 		background-color: rgba(28,100,153, .95);
 		
-		@media only screen and (min-width : 768px) {
+		@media only screen and (min-width : 992px) {
 		display: none;
 		border: 2px solid #1EC072;
 		border-radius: 24px;
 		//flex-direction: row;
 		background: none;
 		position: static;
-  		} 	
-	}
+	  		} 	
+	} 
 	
 	
-	@media only screen and (min-width : 768px) {
+	@media only screen and (min-width : 992px) {
 		display: flex;
 		border: 2px solid #1EC072;
 		border-radius: 24px;
@@ -76,12 +75,12 @@
 	&:first-child{
 		border-top: 1px solid #fff;
 		
-		@media only screen and (min-width : 768px) {
+		@media only screen and (min-width : 992px) {
 			border-top: none;
   		}
 	}
 	
-	@media only screen and (min-width : 768px) {
+	@media only screen and (min-width : 992px) {
 		border-bottom: none;
 		text-align: left;
 		margin-bottom: 0;
@@ -97,7 +96,7 @@
 		line-height: 1.625;
 		transition: all 0.3s ease-in;
 		
-		@media only screen and (min-width : 768px) {
+		@media only screen and (min-width : 992px) {
 			font-size: 16px;
 			font-weight: normal;
   		}
@@ -118,7 +117,7 @@
 	&--hover-radius-right a{
 		border-radius: 0;
 		
-		@media only screen and (min-width : 768px) {
+		@media only screen and (min-width : 992px) {
 			border-radius: 0 20px 20px 0;
   		} 
 	}
@@ -126,7 +125,7 @@
 	&--hover-radius-left a{
 		border-radius: 0;
 		
-		@media only screen and (min-width : 768px) {
+		@media only screen and (min-width : 992px) {
 			border-radius: 20px 0 0 20px;
   		} 
 	}
@@ -164,13 +163,13 @@
 	&--fixed{
 		position: fixed;
 		top: 10px;
-		right: 15px;
+		right: 0px;
 	}
 	.fa-bars, .fa-times{
 		font-size: 35px;
 		position: absolute;
 		top: 10px;
-		right: -10px;
+		right: 0px;
 		color: #18C173;
 	}
 }
