@@ -4,7 +4,11 @@
 
 .wrap-container{
 	width: 100%;
-	height: 1060px;
+	height: auto;
+	
+	@media only screen and (min-width : 992px) {
+		height: 1060px;
+	}
 }
 
 /* hover gradient */
@@ -12,7 +16,7 @@
 	background-color: #fff;
 	border-top: 9px solid @color-blue;
     border-radius: 10px;
-    margin-top: 200px;
+    margin-top: 145px;
 	display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +27,11 @@
     hsl(0, 100%, 100%),
     hsl(0, 100%, 100%)
     );
-  	z-index: 1;
+  	z-index: 0;
+  	
+  	@media only screen and (min-width : 992px) {
+		margin-top: 200px;
+	}
     
     &:hover{
     	border-top: 8px solid #1EBC71;
@@ -317,6 +325,7 @@ ul.card-3-Asic__description__list span.value {
 .form-phone>.modal-form>.Button__label-green-small{
 	width: 100px;
 }
+
 
 
 

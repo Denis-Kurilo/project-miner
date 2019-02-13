@@ -1,8 +1,5 @@
 $(document).ready(function() {
 
-//jequry-ui
-//$('.currency-list').selectmenu();
-
 //slide2id - плавная прокрутка по ссылкам внутри страницы
 $("nav a,a[href='#top'],a[rel='m_PageScroll2id'],a.PageScroll2id").mPageScroll2id({
     highlightSelector:"nav a"
@@ -17,7 +14,7 @@ $('.owl-carousel').owlCarousel({
     margin: 50,
     nav: true,
     navText: ["<i class='fas fa-arrow-left arrow__left'></i>","<i class='fas fa-arrow-right arrow__right'></i>"],
-    autoplaySpeed: 2000,
+    //autoplaySpeed: 5000,
     autoplayHoverPause: true,
     slideBy: 2,
     dots: false,
@@ -25,10 +22,10 @@ $('.owl-carousel').owlCarousel({
     responsive: {
         0: {
             items: 1,
-            nav: false,
+            nav: true,
             //autoplay: 4000
         },
-        640: {
+        992: {
             items: 2,
             nav: true,
             //autoplay: 10000
@@ -90,40 +87,24 @@ ymaps.ready(init);
 
 
 //Animate arrow-top
-
 $(function (){
-
     $("#arrow-top").hide();
-
     $(window).scroll(function(){
-
         if ($(this).scrollTop() > 1000) {
-
             $("#arrow-top").fadeIn();
-
         }else{
-
             $("#arrow-top").fadeOut();
-
         }
-
     });
-
     $("#arrow-top a").click(function(){
-
         $("body, html").animate({
-
             scrollTop:0
-
         }, 1500);
-
         return false;
-
     }); 
 
 
 /* navigation  */
-
 var navToggleButton = $('.navigation__toggle');
 var navToggleIcon = $('.navigation__toggle .fas');
 var navBlock = $('.navigation__list');
@@ -150,10 +131,15 @@ navToggleButton.on('click', function(e){
 navLink.on('click', function(){
     navBlock.removeClass(navBlockOpen);
 })
-
-
 /* //navigation  */
 
+
+//open card-3
+
+/*$('#OpenCard-1').on('click', function(){
+
+    $('.wrapper-characteristic').css('display', 'block');
+})*/
 });
 
 

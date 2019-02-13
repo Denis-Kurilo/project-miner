@@ -7,18 +7,31 @@
 
 .monthlyFee__title {
 	color: #FFF;
-	font-size: 50px;
+	font-size: 34px;
 	line-height: 1;
 	text-align: center;
-	padding-bottom: 70px;
+	padding-bottom: 15px;
 	
 	span{
 		color: @title-span;
+	}
+
+	@media only screen and (min-width : 480px) {
+		font-size: 50px;
+	}
+
+	@media only screen and (min-width : 992px) {
+		padding-bottom: 70px;
 	}
 }
 
 .wrap-icon{
 	text-align: center;
+	margin-top: 40px;
+	
+	@media only screen and (min-width : 992px) {
+		margin-top: 0;
+	}
 }
 
 .monthlyFee__img {

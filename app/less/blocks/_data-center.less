@@ -1,12 +1,24 @@
 .dataCenter {
 	background-color: @color-bg;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	
+	@media only screen and (min-width : 768px) {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
 }
 .dataCenter__title {
-	font-size: 50px;
+	font-size: 40px;
 	color: #000;
 	line-height: 1;
 	text-align: center;
-	padding-bottom: 45px;
+	padding-bottom: 20px;
+	
+	@media only screen and (min-width : 768px) {
+		font-size: 50px;
+		padding-bottom: 45px;
+	}
 	
 	span{
 		display: block;
@@ -31,7 +43,7 @@
         
 			&::before{
 			content: "";
-			display: block;
+			display: block; 
 			width: 100%;
 			height: 100%;
 			position: absolute;

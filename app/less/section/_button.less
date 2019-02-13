@@ -8,8 +8,10 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    background-color: #fff;
     z-index: 0;
     box-shadow: 0px 20px 60px 0px rgba(30, 192, 114, 0.4),inset -118px 0px 0px 0px rgba(235, 243, 245, 0.004);
+    
 
 	@media only screen and (min-width : 480px) {
 		width: 80%;
@@ -17,6 +19,21 @@
 
 	@media only screen and (min-width : 768px) {
 		width: 60%;
+	}
+
+	@media only screen and (min-width : 992px) {
+ 		margin-left: 0;
+ 		margin-top: 20px;
+		margin-bottom: 20px;
+	}	
+
+	@media only screen and (min-width : 992px) {
+		margin-top: 40px;
+		margin-bottom: 40px;
+		
+		&--width-card{
+    		width: 100%;
+    	}
 	}
 }
 
@@ -44,10 +61,16 @@
 			padding: 22px 0;
 			font-size: 21px;
 		}
-		
-		&:hover{
-			color: #BD4343;
+
+		@media only screen and (min-width : 992px) {
+ 			font-size: 18px;
 		}
+
+		@media only screen and (min-width : 1200px) {
+ 			padding: 24px 0;
+			font-size: 22px;
+		}
+		
 	}
 	
 	&:hover{
@@ -55,12 +78,18 @@
 	}
 }
 
+ .switcher__btn--color-hover a:hover{
+	color: #BD4343;
+} 
+
+
 .switcher__icon, .fa{
 	width: 30%;
 	height: 100%;
 	display: contents;
 	background-color: #fff;
-	padding: 20px 0;
+	padding-top: 22px;
+	padding-bottom: 20px;
 	transition: all 0.2s ease-in;
 	position: absolute;
 	top: 0;
@@ -68,28 +97,121 @@
 	z-index: 0;
 	
 	@media only screen and (min-width : 768px) {
-		padding: 22px 0;
-			}
-	
-	a{
-	font-weight: 200;
-	font-size: 20px;
-	color: #2C659B;
-	text-decoration: none;
-	
-	@media only screen and (min-width : 768px) {
-		font-size: 23px;
+		padding-top: 24px;
+		padding-bottom: 22px;
 	}
 	
-	&:hover{
-		color: #BD4343;
-		background-color: #C8CFD1;
+	a{
+		font-weight: 200;
+		font-size: 20px;
+		color: #2C659B;
+		text-decoration: none;
+		
+		@media only screen and (min-width : 768px) {
+			font-size: 23px;
 		}
+
+		@media only screen and (min-width : 1200px) {
+			padding-top: 26px;
+			padding-bottom: 24px;
+			font-size: 25px;
+		}
+
 	}
 }
 .fa-file-pdf-o:before{
 	padding-right: 10px;
 }
+
+.switcher__icon--color-hover a:hover{
+	color: #BD4343;
+	background-color: #C8CFD1;
+}
+
+
+/* card-3 */
+.switcher-wrap--width-card{
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	
+	@media only screen and (min-width : 992px) {
+		margin-bottom: 20px;
+	}
+}
+.switcher__btn--width-card a{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 18px;
+}
+
+ a{
+	padding: 19px 0 15px 10px;
+}
+
+.switcher__icon--width-card .fas{
+	position: absolute;
+	top: 50%;
+	right: 20px;
+    transform: translate(-50%, -50%);
+    color: @icon;
+    font-size: 22px;  
+}
+
+/* monthlyFee */
+.button-wrap{
+	max-width: 420px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* //monthlyFee */
+
+/* services */
+.order__button{
+	position: relative;
+	width: 100%;
+	height: 102px;
+}
+
+.order__button .switcher-wrap{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	
+	@media only screen and (min-width : 768px) {
+		width: 60%;
+	}
+
+	@media only screen and (min-width : 992px) {
+		width: 90%;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+.order__button .switcher__btn--width-card{
+	a{
+		font-size: 16px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		
+		@media only screen and (min-width : 992px) {
+			font-size: 14px;
+		}
+	}
+}
+/* //services */
+
+
+
+
+
+
+
+
+
+
 
 
 
