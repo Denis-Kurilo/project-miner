@@ -1,15 +1,30 @@
 .footer{
 	width: 100%;
-	border: 1px solid red;
+	//border: 1px solid red;
 	background-image: url(../img/fon/footer-bg.png);
 	background-repeat: repeat;
 	display: flex;
     flex-wrap: wrap;
+    position: relative;
+
+    &::before{
+	 		content: "";
+	 		display: block;
+	 		background-image: url(../img/fon/footer-top-bg.png);
+	 		background-repeat: no-repeat;
+	 		background-position: right;
+	 		width: 100%;
+	 		height: 78px;
+	 		position: absolute;
+	 		top: -75px;
+	 		right: 0;
+	 		z-index: 0;
+	 	}  
 }
 
-.maps{
+.maps{ 
 	width: 100%;
-	border: 1px solid green;
+	//border: 1px solid green;
     order: 1;
 	
 	@media only screen and (min-width : 768px) {
@@ -33,20 +48,6 @@
 	right: 0;
 	z-index: 10;
 	
-	 /* &::after{
-	 		content: "";
-	 		display: block;
-	 		background-image: url(../img/fon/footer-top-bg.png);
-	 		background-repeat: no-repeat;
-	 		background-position: right;
-	        background-size: cover;
-	 		width: 100%;
-	 		min-height: 78px;
-	 		position: relative;
-	 		top: -76px;
-	 		right: 0;
-	 		z-index: 0;
-	 	}  */
 }
 
 .footer-top-bg{
@@ -70,7 +71,7 @@
 .contacts{
 	width: 100%;
 	padding-left: 40px;
-	border: 1px solid white;
+	//border: 1px solid white;
 	order: 0;
 	text-align: center;
 	padding-top: 30px;

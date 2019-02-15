@@ -23,17 +23,17 @@ $('.owl-carousel').owlCarousel({
         0: {
             items: 1,
             nav: true,
-            //autoplay: 4000
+            autoplay: 8000
         },
         992: {
             items: 2,
             nav: true,
-            //autoplay: 10000
+            autoplay: 10000
         },
         1200: {
             items: 2,
             nav: true,
-            //autoplay: 10000
+            autoplay: 10000
         },
     }
 });
@@ -133,20 +133,27 @@ navLink.on('click', function(){
 })
 /* //navigation  */
 
-
-//open card-3
-
-/*$('#OpenCard-1').on('click', function(){
-
-    $('.wrapper-characteristic').css('display', 'block');
-})*/
 });
 
+//open card-3
+$('#OpenCard-1').on('click', function(e){
+    e.preventDefault();
+
+    if($('characteristic-card').show(200)){
+        ('#OpenCard-2').hiden(200);
+    }
+    //$('.characteristic-card').show(200);
 
 
 
-
-
+    $(document).mouseup(function (e){ // событие клика по веб-документу
+        var div = $(".characteristic-card"); // тут указываем ID элемента
+        if (!div.is(e.target) // если клик был не по нашему блоку
+            && div.has(e.target).length === 0) { // и не по его дочерним элементам
+            div.hide(); // скрываем его
+        }
+    });
+});
 
 
 
