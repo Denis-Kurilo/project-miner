@@ -23,7 +23,7 @@ $('.owl-carousel').owlCarousel({
         0: {
             items: 1,
             nav: true,
-            autoplay: 8000
+            //autoplay: 8000
         },
         992: {
             items: 2,
