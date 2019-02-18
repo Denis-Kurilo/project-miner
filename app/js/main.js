@@ -85,7 +85,6 @@ ymaps.ready(init);
     }
 /*  maps  */
 
-
 //Animate arrow-top
 $(function (){
     $("#arrow-top").hide();
@@ -102,7 +101,6 @@ $(function (){
         }, 1500);
         return false;
     }); 
-
 
 /* navigation  */
 var navToggleButton = $('.navigation__toggle');
@@ -130,34 +128,48 @@ navToggleButton.on('click', function(e){
 
 navLink.on('click', function(){
     navBlock.removeClass(navBlockOpen);
+
+     if( navToggleIcon.hasClass(iconNav) ){
+        navToggleIcon.removeClass(iconNav);
+        navToggleIcon.addClass(iconClose);
+
+    }else{
+        navToggleIcon.addClass(iconClose);
+        navToggleIcon.addClass(iconNav);
+    }
 })
 /* //navigation  */
 
 });
 
 //open card-3
-$('#OpenCard-1').on('click', function(e){
-    e.preventDefault();
+onload = function (){
+    document.querySelector ('#OpenCard-1').onclick = function (e){
+            var e = e || window.event;
+            if (e.preventDefault) e.preventDefault (); else e.returnValue = false;
+            document.querySelector ('.characteristic-card-hiden-1').style.display = 'block';
+        }
+    document.querySelector ('#OpenCard-2').onclick = function (e){
+        var e = e || window.event;
+        if (e.preventDefault) e.preventDefault (); else e.returnValue = false;
+        document.querySelector ('.characteristic-card-hiden-2').style.display = 'block';
+        }
 
-    if($('characteristic-card').show(200)){
-        ('#OpenCard-2').hiden(200);
-    }
-    //$('.characteristic-card').show(200);
+    document.querySelector ('#OpenCard-3').onclick = function (e){
+        var e = e || window.event;
+        if (e.preventDefault) e.preventDefault (); else e.returnValue = false;
+        document.querySelector ('.characteristic-card-hiden-3').style.display = 'block';
+        }
 
-
-
-    $(document).mouseup(function (e){ // событие клика по веб-документу
+        $(document).mouseup(function (e){ // событие клика по веб-документу
         var div = $(".characteristic-card"); // тут указываем ID элемента
         if (!div.is(e.target) // если клик был не по нашему блоку
             && div.has(e.target).length === 0) { // и не по его дочерним элементам
             div.hide(); // скрываем его
         }
     });
-});
-
-
-
-
+    };
+    
 
 });  
 

@@ -1,12 +1,11 @@
 .wrapper-farm{
 	width: 100%;
-	//height: 1068px;
 	background-image: url(../img/fon/fon-block-ferma.png);
 	background-repeat: no-repeat;
 	background-position: center;
     background-size: cover;
     position: relative;
-    z-index: 0;
+    z-index: -1;
 }
 
 .card{
@@ -26,10 +25,7 @@
 	}
 	
 	text-align: center;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 30px auto;
 }
 
 .card__list{
@@ -54,17 +50,11 @@ ul.card__list li {
 }
 
 ul.card__list li span {
-   
     background-color: #FFF;
-    //background-color: transparent;
-     
     margin: 0;
-    
 }
 
-ul.card__list li span.text, ul.card__list li span.value {
-    bottom: -8px;
-}
+ul.card__list li span.text, ul.card__list li span.value {bottom: -8px;}
 
 ul.card__list span.text {
     position :relative;

@@ -1,6 +1,4 @@
-.card-3-asic{
-	background-color: @color-bg;
-}
+.card-3-asic{background-color: @color-bg;}
 
 .wrap-container{
 	width: 100%;
@@ -33,9 +31,7 @@
     );
   	z-index: 0;
   	
-  	@media only screen and (min-width : 992px) {
-		margin-top: 200px;
-	}
+  	@media only screen and (min-width : 992px) {margin-top: 200px;}
     
     &:hover{
     	border-top: 8px solid #1EBC71;
@@ -67,34 +63,23 @@
   border-radius: 0 0px 10px 10px;
 }
 
- .card-3:hover .card-3-Asic__img>img{
-	border: 10px solid #1EBC71;
-}
+ .card-3:hover .card-3-Asic__img>img{border: 10px solid #1EBC71;}
 
 .card-3:hover .button-test::after{
-
 	left: 0;
     width: 100%;
     opacity: 1; 
 }
 
-.card-3:hover .card-3-Asic__description__item{
-	color: #FFF;
-}
+.card-3:hover .card-3-Asic__description__item{color: #FFF;}
 
-.card-3:hover .card-3-Asic__description__item .value{
-	color: rgba(255,255,255,0.6);
-	
-}
-.card-3:hover .card-3-Asic__characteristic{
-	border-bottom: 1px solid #fff;
-	
-}
+.card-3:hover .card-3-Asic__description__item .value{color: rgba(255,255,255,0.6);}
+
+.card-3:hover .card-3-Asic__characteristic{border-bottom: 1px solid #fff;} 
+
 .card-3:hover .card-3-Asic__characteristic, .card-3:hover 
 .card-3-Asic__price-available, .card-3:hover 
-.card-3-Asic__to-order, .card-3:hover .card-3-Asic__title{
-	color: #FFF;
-} 
+.card-3-Asic__to-order, .card-3:hover .card-3-Asic__title{color: #FFF;} 
 /* //hover gradient */
 
 .card-3-Asic__img {
@@ -113,9 +98,7 @@
 	}
 }
 
-.wrapper-card-text{
-	margin-top: -80px;
-}
+.wrapper-card-text{margin-top: -80px;}
 
 .card-3-Asic__title {
 	font-size: 30px;
@@ -181,48 +164,43 @@
 	margin-bottom: 20px;
 }
 
-.card-3-Asic__price-available span, .card-3-Asic__to-order span{
-	font-weight: 600; 
-}
-
+.card-3-Asic__price-available span, .card-3-Asic__to-order span{font-weight: 600;}
 
 /* Block description */
+  .wrap-block-3{display: flex;}  
 
 .characteristic-card{
-	display: none;
-	/* width: 100%;
-	height: 100%; */
-	//border: 1px solid red;
 	position: absolute;
-	//top: -20px;
-	top: -683px;
+	top: 0;
 	left: 0;
-	//border-radius: 10px 10px 10px 10px;
+	z-index: 100;
 	
-	&--position-r{
-		right: 0;
-	}
-
+	&--position-r{right: 0;}
 }
-
-.characteristic-card-show{
-	display: none;
-}
+ 
+.characteristic-card-hiden-1, .characteristic-card-hiden-2, .characteristic-card-hiden-3{display: none;}
 
 .wrap-text{
-	width: 92%;
-	margin-left: 15px;
-    padding-left: 20px;
-	padding-right: 20px;
+	width: 100%;
+	margin-left: 0;
+    padding-left: 10px;
+	padding-right: 0;
 	background-color: #FFF;
-	
-	//border: 1px solid red;
 	border-top: 8px solid @color-blue;
+	border-left: 2px solid @color-blue;
+	border-right: 2px solid @color-blue;
+	border-bottom: 2px solid @color-blue;
 	border-radius: 10px 10px 10px 10px;
 	position: relative;
-	z-index: 1;
+	z-index: 1000;
+	top: 45px;
 	bottom: 0;
 	
+	@media only screen and (min-width : 480px) {
+		margin-left: 0;
+	    padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 
 .characteristic__title {
@@ -271,8 +249,8 @@
 
 //form
 .communicate{
-	width: 92%;
-	margin-left: 15px;
+	width: 100%;
+	margin-left: 0;
 	position: relative;
 	top: -8px;
 }
@@ -284,9 +262,7 @@
     hsl(251, 46%, 18%)
   );	
   
-  &--bg-none{
-  	background-image: none;
-  }
+  &--bg-none{background-image: none;}
 }
 .form-phone__title{
 	font-size: 18px;
@@ -299,7 +275,7 @@
 }
 
 .form-phone>.modal-form {
-	margin-top: 0px;
+	margin-top: 0;
 	margin-bottom: 0;		
 }
 
@@ -310,204 +286,4 @@
 	padding-bottom: 10px;
 }
 
-.form-phone>.modal-form>.Button__label-green-small{
-	width: 100px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .wrap-characteristic{
-	 position: absolute;
-	    top: 250px;
-	    left: 0; 
-    z-index: 50;
-    width: 15%;
-    
-}
-.wrapper-characteristic{
-	position: absolute;
-    top: 0px;
-    left: 0;
-    width: 16%;
-	background-image: linear-gradient(
-    to bottom,
-	hsl(211, 36%, 21%),
-    hsl(251, 46%, 18%)
-  );	
-	background-color: #ccc;
-	border-top: 8px solid @color-blue;
-	border-radius: 10px 10px 10px 10px;
-}
-.wrap-text{
-	position: relative;
-	padding-left: 25px;
-    padding-right: 25px;
-    word-break: break-all;
-    border-radius: 0px 0 10px 10px;
-    background-image: linear-gradient(
-    to bottom,
-	hsl(180, 33%, 99%),
-    hsl(60, 50%, 99%),
-    hsl(0, 0%, 99%)
-  );
-}
-
-
-
-
-
-
-
-.characteristic__title {
-	font-size: 30px;
-	font-weight: 900;
-	color: rgb(33, 21, 65);
-	line-height: 1.067;
-	text-align: center;
-	padding-bottom: 35px;
-	word-break: normal;
-	padding-top: 35px;
-}
-.characteristic__info, .characteristic__technical-characteristic {
-	font-size: 18px;
-	font-weight: bold;
-	color: rgb(78, 151, 214);
-  	line-height: 1.667;
-  	padding-bottom: 10px;
-}
-.characteristic__info-desk, .characteristic__technical-characteristic-desk {
-	font-size: 15px;
-	padding-bottom: 30px;
-	
-	ul{
-		margin: 0;
-		padding: 0;
-		list-style-type: none;
-		li{
-			margin: 0;
-			padding: 0;
-			font-weight: bold;
-			
-			span{
-				font-weight: normal;
-				padding-left: 5px;
-			}
-		}
-	}
-
-	p{
-		font-size: 15px;
-	}
-}
-.form-phone{	
-	border-radius: 0px 0 10px 10px;
-	background-image: linear-gradient(
-    to bottom,
-	hsl(211, 36%, 21%),
-    hsl(251, 46%, 18%)
-  );	
-  
-  &--bg-none{
-  	background-image: none;
-  }
-}
-.form-phone__title{
-	font-size: 18px;
-	color: rgb(255, 255, 255);
-	font-weight: bold;
-	line-height: 1.667;
-	padding-top: 30px;
-	padding-left: 25px;
-	padding-bottom: 10px;
-}
-
-.form-phone>.modal-form {
-	margin-top: 0px;
-	margin-bottom: 0;		
-}
-
-.form-phone>.modal-form>.modal-form__input--maskedinput {
-	letter-spacing: 3px;
-	margin-bottom: 0px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
-.form-phone>.modal-form>.Button__label-green-small{
-	width: 100px;
-}
- */
-
-
-
-/* .form-phone>.button {
-	width:260px;
-}
-.form-phone.button-width {
-	width:100px;
-} */
-/* .form-phone>.modal-form>.Button__label-green {
-	width:260px;
-} */
-
-/* Block //description */
-
-
-
-/* dashed line */
-/* ul.card-3-Asic__description__list li {
-    border-bottom: 1px dotted #C2C2C2;
-    position: relative;
-    padding: 0;
-}
-
-ul.card-3-Asic__description__list li span {
-   
-    background-color: #FFF;
-    //background-color: transparent;
-     
-    margin: 0;
-    
-}
-
-ul.card-3-Asic__description__list li span.text, ul.card-3-Asic__description__list li span.value {
-    bottom: -8px;
-}
-
-ul.card-3-Asic__description__list span.text {
-    position :relative;
-    margin-right:7em; 
-    padding-right:2px;
-}
-
-ul.card-3-Asic__description__list span.value {
-    position: absolute;
-    right: 0;
-    padding-left:2px; 
-} */
-/* //dashed line */
+.form-phone>.modal-form>.Button__label-green-small{width: 100px;}

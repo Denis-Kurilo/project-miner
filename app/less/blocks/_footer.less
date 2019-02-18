@@ -1,6 +1,5 @@
 .footer{
 	width: 100%;
-	//border: 1px solid red;
 	background-image: url(../img/fon/footer-bg.png);
 	background-repeat: repeat;
 	display: flex;
@@ -24,7 +23,6 @@
 
 .maps{ 
 	width: 100%;
-	//border: 1px solid green;
     order: 1;
 	
 	@media only screen and (min-width : 768px) {
@@ -36,8 +34,6 @@
 	}
 }
 .wrap-contacts{
-
-	//display: flex;
 	background-image: url(../img/fon/footer-bg2.png);
 	background-repeat: no-repeat;
 	width: 100%;
@@ -46,8 +42,7 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	z-index: 10;
-	
+	z-index: 0;
 }
 
 .footer-top-bg{
@@ -70,10 +65,9 @@
 
 .contacts{
 	width: 100%;
-	padding-left: 40px;
-	//border: 1px solid white;
 	order: 0;
 	text-align: center;
+	padding-left: 0px;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	position: relative;
@@ -82,28 +76,21 @@
 		width: 50%;
 		order: 1;
 		text-align: left;
-		padding-top: 70px;
-		padding-bottom: 70px;
+		padding: 70px 0 70px 40px;
 	}
 	
-	@media only screen and (min-width : 992px) {
-		padding-left: 80px;
-	}
+	@media only screen and (min-width : 992px) {padding-left: 80px;}
 }
 
 .contacts__title{
-	font-size: 42px;
+	font-size: 38px;
 	color: rgb(255, 255, 255);
 	line-height: 1;
 	padding-bottom: 70px;
 	
-	span{
-		color: @title;
-	}
+	span{color: @title;}
 
-	@media only screen and (min-width : 992px) {
-		font-size: 50px;
-	}
+	@media only screen and (min-width : 992px) {font-size: 50px;}
 }
 
 .address{
@@ -115,100 +102,15 @@
 
 .arrow-top{
 	position: fixed; 
-	bottom: 265px;
-	right: -260px;
 	z-index: 10000; 
 	width: 50%;
-	display: flex;
+	display: none;
     justify-content: center;
 	margin-top: 20px;
-}
-
-
-
-
-
-/* .maps{
-	width: 100%;
-	height: 100%;
-	.myMap{
-		//height: 430px;
-		height: 520px;
-		
-		@media only screen and (min-width : 1440px) {
-			height: 432px;
-		}
-	}
-}
-
-.wrap-contacts{
-	display: flex;
-	background-image: url(../img/fon/footer-bg2.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	position: relative;
 	
-	&::before{
-		content: "";
-		display: block;
-		background-image: url(../img/fon/footer-top-bg.png);
-		background-repeat: no-repeat;
-		background-position: right;
-        background-size: cover;
-		width: 100%;
-		height: 78px;
-		position: absolute;
-		top: -76px;
-		right: 0;
-		z-index: 0;
-	}
+	@media only screen and (min-width : 992px) {
+  		display: flex;
+  		bottom: 265px;
+		right: -197px;
+	} 
 }
-.contacts{
-	width: 100%;
-	padding-left: 80px;
-}
-
-.contacts__title{
-	font-size: 50px;
-	color: rgb(255, 255, 255);
-	line-height: 1;
-	padding-bottom: 70px;
-	
-	span{
-		color: @title;
-	}
-}
-
-.address{
-  font-size: 18px;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  line-height: 1.5;	
-}
-
-.arrow-top{
-	position: fixed; 
-	bottom: 265px;
-	right: -260px;
-	z-index: 10000; 
-	width: 50%;
-	display: flex;
-    justify-content: center;
-	margin-top: 20px;
-} */
-
-/*.phone .number-fs-25{
-	font-size: 25px;
-	
-	@media only screen and (min-width : 1440px) {
-		font-size: 30px;
-	}
-}
-
- .phone .working-hours--fs-17{
-	font-size: 17px;
-	
-	@media only screen and (min-width : 1440px) {
-		font-size: 20px;
-	}
-} */

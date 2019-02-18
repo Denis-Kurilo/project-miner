@@ -12,32 +12,22 @@
 
 .navigation { 
 	display: flex;
-	//width: 100%;
 	
-
 	.navigation__toggle{
 		display: block;
 		
-		@media only screen and (min-width : 992px) {
-		display: none;
-  		}
+		@media only screen and (min-width : 992px) {display: none;}
 	}	
 }
 .navigation__list {
 	display: none;
-	//display: flex;
 	margin: 0;
 	padding: 0;  
-	//border: 2px solid #1EC072;
-	//border-radius: 10px;
-	
-
 
 	 &--open{
 		display: flex;
 	    justify-content: center;
 	    flex-direction: column;
-		//width: 100%;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -47,16 +37,14 @@
 		background-color: rgba(28,100,153, .95);
 		
 		@media only screen and (min-width : 992px) {
-		display: none;
-		border: 2px solid #1EC072;
-		border-radius: 24px;
-		//flex-direction: row;
-		background: none;
-		position: static;
-	  		} 	
+			display: none;
+			border: 2px solid #1EC072;
+			border-radius: 24px;
+			background: none;
+			position: static;
+	  	} 	
 	} 
-	
-	
+
 	@media only screen and (min-width : 992px) {
 		display: flex;
 		border: 2px solid #1EC072;
@@ -75,9 +63,7 @@
 	&:first-child{
 		border-top: 1px solid #fff;
 		
-		@media only screen and (min-width : 992px) {
-			border-top: none;
-  		}
+		@media only screen and (min-width : 992px) {border-top: none;}
 	}
 	
 	@media only screen and (min-width : 992px) {
@@ -101,12 +87,8 @@
 			font-weight: normal;
   		}
 		
-			&:first-child{
-				padding-left: 18px;
-			}
-			&:last-child{
-				padding-right: 18px;
-			}
+			&:first-child{padding-left: 18px;}
+			&:last-child{padding-right: 18px;}
 
 			&:hover, &:focus{
 				text-decoration: none;
@@ -125,9 +107,7 @@
 	&--hover-radius-left a{
 		border-radius: 0;
 		
-		@media only screen and (min-width : 992px) {
-			border-radius: 20px 0 0 20px;
-  		} 
+		@media only screen and (min-width : 992px) {border-radius: 20px 0 0 20px;} 
 	}
 }
 
@@ -146,9 +126,7 @@
 	vertical-align: middle;	
 }
 
-.fa-phone{
-	transform: rotate(100deg);
-}
+.fa-phone{transform: rotate(100deg);}
 
 .working-hours {
 	font-size: 20px;
@@ -158,7 +136,8 @@
 
 //target_nav_top
 .navigation__toggle{
-	z-index: 200;
+	position: relative;
+	z-index: 2000;
 	
 	&--fixed{
 		position: fixed;
@@ -173,38 +152,3 @@
 		color: #18C173;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*  .navigation__taggle-top{
-	color: @menu-top-taggle;
-	width: 100%;
-	margin-top: 0px;
-	font: bold 20px Arial, sans-serif;
-   height: 65px;
-   display: flex;
-   -webkit-align-items: center;
-	align-items: center;
-	-webkit-justify-content: center;
-	justify-content: center;
-   cursor: pointer;
-   text-decoration: none;
-   position: relative;
-   z-index: 1; 
-   
-	 @media only screen and (min-width : 992px){
-		display: none;
-	} 
-}
-*/
-
