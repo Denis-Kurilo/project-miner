@@ -166,8 +166,7 @@
 
 .card-3-Asic__price-available span, .card-3-Asic__to-order span{font-weight: 600;}
 
-/* Block description */
-  .wrap-block-3{display: flex;}  
+/* Block description */ 
 
 .characteristic-card{
 	position: absolute;
@@ -178,7 +177,7 @@
 	&--position-r{right: 0;}
 }
  
-.characteristic-card-hiden-1, .characteristic-card-hiden-2, .characteristic-card-hiden-3{display: none;}
+.characteristic-card-hiden-1, .characteristic-card-hiden-2, .characteristic-card-hiden-3{display: none; z-index: 1;}
 
 .wrap-text{
 	width: 100%;
@@ -195,7 +194,7 @@
 	z-index: 1000;
 	top: 45px;
 	bottom: 0;
-	
+
 	@media only screen and (min-width : 480px) {
 		margin-left: 0;
 	    padding-left: 20px;
@@ -256,6 +255,7 @@
 }
 .form-phone{	
 	border-radius: 0px 0 10px 10px;
+	margin-top: 40px;
 	background-image: linear-gradient(
     to bottom,
 	hsl(211, 36%, 21%),
