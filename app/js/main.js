@@ -169,6 +169,22 @@ onload = function (){
         }
     });
     };
+
+
+
+/*  exchange  */
+
+getRate();
+
+function getRate(){
+    $.get(
+        "https://api.coindesk.com/v1/bpi/currentprice.json",
+        function(data){
+            data = JSON.parse(data);
+            console.log(data);
+        }
+        );
+} 
     
 
 });  
