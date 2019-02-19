@@ -174,19 +174,16 @@ onload = function (){
 
 /*  exchange  */
 
-getRate();
+/*getRate();
 
 function getRate(){
     $.get(
-        "https://api.coindesk.com/v1/bpi/currentprice.json",
+        "https://api.cryptonator.com/api/ticker/btc-usd",
         function(data){
-            data = JSON.parse(data);
+            //data = JSON.parse(data);
             console.log(data);
         }
         );
-} 
-    
+}*/ 
 
 });  
-
-	

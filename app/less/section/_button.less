@@ -4,7 +4,7 @@
 	height: auto;
 	display: flex;
     border-radius: 35px;
-    overflow: hidden;
+    overflow: hidden; 
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -12,27 +12,15 @@
     z-index: 0;
     box-shadow: 0px 20px 60px 0px rgba(30, 192, 114, 0.4),inset -118px 0px 0px 0px rgba(235, 243, 245, 0.004);
     
-    &--width-characteristic{
-		width: 90%;
-	}
+    &--width-characteristic{width: 90%;}
 
-	&--width-modal{
-		width: 100%;
-		background-color: red;
-	}
+	&--width-modal{width: 100%;}
     
 
 	@media only screen and (min-width : 480px) {
 		width: 80%;
 		
-		&--width-modal{
-			width: 80%;
-			background-color: green;
-		}
-	}
-
-	@media only screen and (min-width : 768px) {
-		width: 60%;
+		&--width-modal{width: 80%;}
 	}
 
 	@media only screen and (min-width : 992px) {
@@ -44,9 +32,7 @@
 		margin-top: 40px;
 		margin-bottom: 40px;
 		
-		&--width-card{
-    		width: 100%;
-    	}
+		&--width-card{width: 100%;}
 
     	&--width-characteristic{
     		width: 80%;
@@ -61,9 +47,7 @@
 		margin: 0;
 		margin-top: 20px;
 		
-		@media only screen and (min-width : 992px) {
-			margin-top: 0;
-		}
+		@media only screen and (min-width : 992px) {margin-top: 0;}
 	}
 }
 
@@ -102,30 +86,6 @@
 	}
 	
 	&:hover{width: 100%;}
-}
-
-.modal .switcher__btn--width-modal{
-	font-size: 10px;
-	margin-left: auto;
-	margin-right: auto;
-	
-	@media only screen and (min-width :480px) {
-		font-size: 15px;
-	}
-
-	@media only screen and (min-width : 768px) {
-		font-size: 22px;
-	}
-}
-
-.switcher__icon--width-modal .fas{
-	right: 10px;
-	font-size: 18px;
-	
-	@media only screen and (min-width :480px) {
-		right: 20px;
-		font-size: 22px;
-	}
 }
 
  .switcher__btn--color-hover a:hover{color: #BD4343;} 
@@ -167,15 +127,12 @@
 
 	}
 }
-.fa-file-pdf-o:before{
-	padding-right: 10px;
-}
+.fa-file-pdf-o:before{padding-right: 10px;}
 
 .switcher__icon--color-hover a:hover{
 	color: #BD4343;
 	background-color: #C8CFD1;
 }
-
 
 /* card-3 */
 .switcher-wrap--width-card{
@@ -183,9 +140,7 @@
 	margin-top: 20px;
 	margin-bottom: 40px;
 	
-	@media only screen and (min-width : 992px) {
-		margin-bottom: 20px;
-	}
+	@media only screen and (min-width : 992px) {margin-bottom: 20px;}
 }
 .switcher__btn--width-card a{
 	padding-top: 15px;

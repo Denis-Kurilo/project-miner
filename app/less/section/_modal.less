@@ -7,7 +7,7 @@
 .modal-title{
 	font-size: 50px;
 	color: #FFF;
-	line-height: 1;
+	line-height: 1; 
 	text-align: center;
 	
 	span{color: @title-span;}
@@ -55,5 +55,46 @@
     letter-spacing: 8px;
     
    	&::placeholder{color: #000;}
+}
+
+.modal .modal-title{
+	font-size: 29px;
+	
+	@media only screen and (min-width : 768px) {font-size: 50px;}
+}
+
+.modal .modal-form__input--maskedinput{
+	font-size: 14px;
+	letter-spacing: 1px;
+	
+	@media only screen and (min-width : 480px) {
+		font-size: 25px;
+		letter-spacing: 2px;
+	}
+	
+	@media only screen and (min-width : 768px) {
+		font-size: 25px;
+		letter-spacing: 8px;
+	}
+}
+
+.modal .switcher__btn--width-modal{
+	font-size: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	@media only screen and (min-width :480px) {font-size: 15px;}
+
+	@media only screen and (min-width : 768px) {font-size: 20px;}
+}
+
+.switcher__icon--width-modal .fas{
+	right: 10px;
+	font-size: 18px;
+	
+	@media only screen and (min-width :480px) {
+		right: 20px;
+		font-size: 22px;
+	}
 }
 
