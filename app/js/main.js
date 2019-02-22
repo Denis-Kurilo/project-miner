@@ -4,7 +4,7 @@ $(document).ready(function() {
 $("nav a,a[href='#top'],a[rel='m_PageScroll2id'],a.PageScroll2id").mPageScroll2id({
     highlightSelector:"nav a"
 });
-
+ 
 // maskedinput 
 $(".modal-form__input--maskedinput").mask("+7(999) 99-99-999");
     
@@ -167,10 +167,19 @@ onload = function (){
             && div.has(e.target).length === 0) { // и не по его дочерним элементам
             div.hide(); // скрываем его
         }
-    });
+        });
     };
 
+//JQuery Validate JS
+/*$("#contact-form").validate({
+    rules: {
+        tel: { required: true}
+    },
+    messages: {
+        tel: "Пожалуйста",
+    },
 
+})*/
 
 /*  exchange  */
 
@@ -184,6 +193,30 @@ function getRate(){
             console.log(data);
         }
         );
-}*/ 
+}*/
+
+
+// Функция AJAX запрса на сервер
+
+    /*function ajaxFormSubmit(){
+        var string = $("#contact-form").serialize(); // Соханяем данные введенные в форму в строку. 
+
+        // Формируем ajax запрос
+        $.ajax({
+            type: "POST", // Тип запроса - POST
+            url: "php/mail.php", // Куда отправляем запрос
+            data: string, // Какие даные отправляем, в данном случае отправляем переменную string
+            
+            // Функция если все прошло успешно
+            success: function(html){
+                $("#contact-form").slideUp(800);
+                $('#answer').html(html);
+            }
+        });
+
+        // Чтобы по Submit больше ничего не выполнялось - делаем возврат false чтобы прервать цепчку срабатывания остальных функций
+        return false; 
+    }
+*/
 
 });  

@@ -51,7 +51,38 @@
 	}
 }
 
-.switcher__btn {
+input[type="submit"]{
+	width: 100%;
+	border: none;
+	background-color: @color-button;
+	color: #FFF;
+	padding: 15px 10px; 
+	font-weight: bold;
+	transition: all 0.4s ease-in;	
+}
+
+#ex1 input[type="submit"]{
+	font-size: 15px;
+	
+	@media only screen and (min-width :480px) {
+		font-size: 18px;
+	}
+	
+}
+
+#ex input[type="submit"]{
+	font-size: 11px;
+	
+	@media only screen and (min-width :480px) {
+		font-size: 16px;
+	}
+
+	@media only screen and (min-width :768px) {
+		font-size: 18px;
+	}
+}
+
+.switcher__btn{
 	width: 70%;
 	height: auto;
 	background-color: @color-button;

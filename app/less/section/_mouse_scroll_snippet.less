@@ -1,18 +1,42 @@
 .mouse-scroll{
   display: none;
-  
    @media screen and (min-width : 992px) {display: flex;}
 }
 .twist-down{
-  display: block;
-  color: #FFF;
-  font-size: 15px;
-  writing-mode: vertical-rl;
-  padding-bottom: 12px;
-  letter-spacing: 4px;
-  opacity: .7;
-  transition: all 0.2s ease-in;
-  width: 22px;
+    display: block;
+    font-size: 15px;
+    writing-mode: vertical-rl;
+    padding-bottom: 12px;
+    letter-spacing: 4px;
+    transition: all 0.2s ease-in;
+    width: 22px;
+  
+    &--animation-top{
+        animation-name: shows-top;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;  
+    }
+  
+  @keyframes shows-top{
+    
+    0%{
+      color: #1EC072;
+      opacity: .2; 
+    }
+
+    50%, {
+      color: #fff;
+      opacity: .7; 
+    }
+
+    100%{
+      color: #fff;
+      opacity: 1; 
+    }
+  }
+
   
   a{display: block;}
 
